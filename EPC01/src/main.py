@@ -1,9 +1,8 @@
-import utils
-import Perceptron
+from src import utils
+from src.Perceptron import Perceptron
 
 
-
-def main():
+def start():
     utils.limpar_arquivo("EPC01/results/resultado_treinamento.txt")
     utils.limpar_arquivo("EPC01/results/resultado_teste.txt")
 
@@ -12,7 +11,7 @@ def main():
    
     # treinamento 
     for _ in range(5):
-        perceptron = Perceptron.Perceptron()
+        perceptron = Perceptron()
         pesos_iniciais = list(perceptron.get_weights())
 
         epocas, pesos_finais = perceptron.train(dados_treinamento)
@@ -27,6 +26,3 @@ def main():
     utils.escrever_result_teste("EPC01/results/resultado_teste.txt",resultados)
     
     
-
-if __name__ == '__main__':
-    main()
