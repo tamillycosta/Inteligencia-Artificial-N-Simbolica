@@ -1,0 +1,30 @@
+Pesos iniciais:
+0.7253, 0.4848, 0.2114 
+Pesos finais:
+0.8253, 0.2481, 0.0208
+Épocas: 2
+
+Pesos iniciais:
+0.8315, 0.9349, 0.6190 
+Pesos finais:
+1.1215, 0.3197, 0.0346
+Épocas: 3
+
+Pesos iniciais:
+0.7182, 0.8943, 0.5348 
+Pesos finais:
+1.0082, 0.2660, 0.0530
+Épocas: 8
+
+Pesos iniciais:
+0.7684, 0.7245, 0.1952 
+Pesos finais:
+0.9684, 0.2703, 0.0336
+Épocas: 9
+
+Pesos iniciais:
+0.3462, 0.2170, 0.0167 
+Pesos finais:
+0.4162, 0.1056, 0.0292
+Épocas: 4
+

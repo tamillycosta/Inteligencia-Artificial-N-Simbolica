@@ -1,0 +1,43 @@
+def carregar_dados(caminho : str) -> list:
+    dados = []
+    arquivo = open(caminho, "r")
+
+    for linha in arquivo:
+
+        valores = linha.split()
+
+        x1 = float(valores[0])
+        x2 = float(valores[1])
+        d = float(valores[2])
+
+        dados.append([x1, x2, d])
+        
+    arquivo.close()
+    return dados
+
+def limpar_arquivo(caminho:str):
+    open(caminho, "w").close()
+    
+
+def escrever_result_treinamento(caminho: str, epocas: int, pesos_iniciais: list, pesos_finais: list) -> None:
+   
+    with open(caminho, "a") as arquivo:
+
+        arquivo.write("Pesos iniciais:\n")
+        arquivo.write(f"{pesos_iniciais[0]:.4f}, {pesos_iniciais[1]:.4f}, {pesos_iniciais[2]:.4f} \n")
+
+        arquivo.write("Pesos finais:\n")
+        arquivo.write(f"{pesos_finais[0]:.4f}, {pesos_finais[1]:.4f}, {pesos_finais[2]:.4f}\n")
+
+        arquivo.write(f"Épocas: {epocas}\n")
+
+
+        arquivo.write("\n")  
+
+def escrever_result_teste(caminho: str, resultados: list ):
+    with open(caminho, "a") as arquivo:
+        for i in range(len(resultados)):
+            arquivo.write(f"treinamento {i+1}: \n ")
+            arquivo.write(f"{resultados[0]}\n")
+
+
