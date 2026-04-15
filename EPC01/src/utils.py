@@ -1,3 +1,4 @@
+
 def carregar_dados(caminho : str) -> list:
     dados = []
     arquivo = open(caminho, "r")

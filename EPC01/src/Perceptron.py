@@ -40,7 +40,7 @@ class Perceptron:
 
                 y = self.ativacao(x1, x2)
                 
-                if d - y != 0:
+                if d != y:
                     self.__atualiza_pesos(x1, x2, d - y)
                     erro_total += 1
 
